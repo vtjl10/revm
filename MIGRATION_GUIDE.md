@@ -5,7 +5,7 @@
    * `transact_system_call` is now `system_call_one`.
 * `ExtBytecode::regenerate_hash` got deprecated in support for `get_or_calculate_hash` or `calculate_hash`.
 * Precompiles:
-  * Bn128 renamed to Bn254. https://github.com/ethereum/EIPs/pull/10029#issue-3240867404
+  * Bn128 renamed to Bn254. See [EIP PR #10029](https://github.com/ethereum/EIPs/pull/10029#issue-3240867404)
 * `InstructionResult` now starts from 1 (previous 0) for perf purposes.
 * In `JournalInner` previous `precompiles`, `warm_coinbase_address` and `warm_preloaded_addresses` pub fields are now moved to `warm_addresses` to encapsulate addresses that are warm by default. All access list account are all loaded from database.
 
